@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class JdbcWithoutTransaction {
 	@Autowired
-	private JdbcTemplate jdbcTemplate;
+	private JdbcTemplate jdbcTemplate; 
 	
 	public void addCredits(String name, int credits) {
 		jdbcTemplate.update("update t_user set credits=credits+? where user_name=?", credits, name);
