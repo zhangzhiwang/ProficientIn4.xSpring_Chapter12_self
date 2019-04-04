@@ -10,7 +10,7 @@ import com.asiainfo.dao.interfaces.IUserDao;
 import com.asiainfo.entity.User;
 
 @Repository
-public class UserDaoImpl implements IUserDao {
+public class UserDaoImpl {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
