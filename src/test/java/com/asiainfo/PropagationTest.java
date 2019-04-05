@@ -3,6 +3,7 @@ package com.asiainfo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.asiainfo.service.impl.ServiceImpl;
 import com.asiainfo.service.impl.UserServiceImpl;
 
 /**
@@ -14,7 +15,8 @@ import com.asiainfo.service.impl.UserServiceImpl;
 public class PropagationTest {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");// 这样也启动了Spring容器，相当于启动tomcat
-		UserServiceImpl userServiceImpl = (UserServiceImpl) applicationContext.getBean("userServiceImpl");
-		userServiceImpl.save(null);
+//		UserServiceImpl userServiceImpl = (UserServiceImpl) applicationContext.getBean("userServiceImpl");
+//		userServiceImpl.save(null);
+		
 	}
 }
